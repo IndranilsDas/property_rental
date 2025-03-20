@@ -4,6 +4,7 @@ import { Prompt } from 'next/font/google';
 
 // Load multiple weights of Prompt
 const prompt = Prompt({
+  subsets: ['latin'],
   weight: ['200', '300', '400', '600', '800'],
 });
 

@@ -4,8 +4,9 @@ import React, { useState } from 'react';
 import { Prompt } from 'next/font/google';
 
 const prompt = Prompt({
-  weight: ['200', '300', '400', '600', '800'],
-});
+    subsets: ['latin'],
+    weight: ['200', '300', '400', '600', '800'],
+  });
 
 const tabData = {
   Villas: [

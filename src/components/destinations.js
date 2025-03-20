@@ -4,6 +4,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Prompt } from 'next/font/google';
 
 const prompt = Prompt({
+  subsets: ['latin'],
   weight: ['200', '300', '400', '600', '800'],
 });
 
