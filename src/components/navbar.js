@@ -5,8 +5,9 @@ import { CiBellOn } from "react-icons/ci";
 import { FaUserCircle } from "react-icons/fa";
 
 const prompt = Prompt({
-  weight : ['200','300','400','600','800']
-})
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '600', '800'],
+});
 
 export default function Nav() {
 const [Scrolled, SetScrolled] = useState(false);
