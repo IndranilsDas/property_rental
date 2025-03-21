@@ -8,6 +8,8 @@ import BestRated from "@/components/best_rated";
 import StayLikeStars from "@/components/stars";
 import Footer from "@/components/footer";
 import Banner1 from "@/components/banner1";
+import Features from "@/components/features";
+import Collections from "@/components/collections";
 
 export default function Home() {
   return (
@@ -16,12 +18,13 @@ export default function Home() {
     <Titlescreen/>
     <Destinations/>
     <Finance/>
+    <Collections/>
     <TrendingSection/>
     <BestRated/>
     <Banner1/>
+    <Features/>
     <StayLikeStars/>
     <Footer/>
-
 
     </section>
   );

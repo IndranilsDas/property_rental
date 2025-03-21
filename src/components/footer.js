@@ -63,7 +63,7 @@ export default function Footer() {
         </h1>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center border-b border-gray-400 gap-2 w-full px-4">
+        <div className="flex flex-wrap justify-center border-b border-gray-400 gap-8 w-full px-5">
           {Object.keys(tabData).map((tab) => (
             <button
               key={tab}
