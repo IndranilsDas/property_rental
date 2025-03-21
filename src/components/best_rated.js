@@ -88,7 +88,7 @@ export default function BestRated() {
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-4 px-16 mb-4 py-4">
+      <div className="flex gap-4 px-16 mb-4 py-4 overflow-x-auto">
         {tabs.map((tab) => (
           <button
             key={tab}

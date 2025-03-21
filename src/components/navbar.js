@@ -31,7 +31,7 @@ export default function Nav() {
     <div className={`${prompt.className}`}>
       <nav>
         <div></div>
-        <div className={`fixed w-screen top-0 z-50 transition duration-300 flex flex-wrap items-center justify-center md:justify-end gap-4 px-6 py-4 
+        <div className={`fixed w-full top-0 z-50 transition duration-300 flex flex-wrap items-center justify-center md:justify-end gap-4 px-6 py-4 
           ${Scrolled ? 'backdrop-blur-md shadow-xl' : 'bg-transparent'}`}>
           
           <button className={`text-sm md:text-base ${Scrolled ? 'text-black' : 'text-white'} hover:text-orange-300 duration-300`}>

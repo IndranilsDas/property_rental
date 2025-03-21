@@ -76,7 +76,7 @@ export default function Finance() {
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-4 px-16 mb-4 py-4 items-left">
+      <div className="flex gap-4 px-16 mb-4 py-4 items-left overflow-x-auto">
         {tabs.map((tab) => (
           <button
             key={tab}

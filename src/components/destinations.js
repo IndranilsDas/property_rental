@@ -38,7 +38,7 @@ export default function Destinations() {
   return (
     <section className={`${prompt.className} flex flex-col p-6 bg-yellow-50`}>
       {/* Heading */}
-      <div className="flex justify-between items-center mb-4 px-16 py-16">
+      <div className="flex justify-between items-center mb-4 px-16 py-16 overflow-x-auto">
         <h1 className="text-left font-semibold text-3xl text-black">Pick a Destination</h1>
         <button className="text-blue-500 hover:underline text-sm">
           Show nearby locations
