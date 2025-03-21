@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import { Prompt } from 'next/font/google';
 
 const prompt = Prompt({
-    subsets: ['latin'],
-    weight: ['200', '300', '400', '600', '800'],
-  });
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '600', '800'],
+});
 
 const tabData = {
   Villas: [
@@ -58,16 +58,16 @@ export default function Footer() {
     <section className={`${prompt.className} bg-zinc-800 text-white`}>
       <div className="flex flex-col py-8 justify-center items-center">
         {/* Heading */}
-        <h1 className="p-4 text-2xl font-semibold">
+        <h1 className="p-4 text-2xl font-semibold text-center">
           Popular Destinations to Rent a Holiday Home in India
         </h1>
 
         {/* Tabs */}
-        <div className="flex justify-between border-b border-gray-400 mx-auto w-[1200px]">
+        <div className="flex flex-wrap justify-center border-b border-gray-400 gap-2 w-full px-4">
           {Object.keys(tabData).map((tab) => (
             <button
               key={tab}
-              className={`px-6 py-4 text-lg rounded-t-lg ${
+              className={`px-4 py-2 text-base md:text-lg rounded-t-lg ${
                 activeTab === tab
                   ? 'bg-zinc-700 text-white font-semibold'
                   : 'bg-zinc-500 text-gray-300'
@@ -80,7 +80,7 @@ export default function Footer() {
         </div>
 
         {/* Tab Content */}
-        <div className="grid grid-cols-3 gap-8 mt-6 w-[1200px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 w-full px-4">
           {tabData[activeTab].map((item, index) => (
             <div key={index} className="text-gray-300 hover:text-white">
               {item}
@@ -90,7 +90,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Section */}
-      <div className="border-t border-gray-500 mt-8 py-8 px-8 flex justify-between w-[1200px] mx-auto">
+      <div className="border-t border-gray-500 mt-8 py-8 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-screen-lg mx-auto">
         {/* Top Locations */}
         <div>
           <h3 className="font-semibold mb-2">Top Locations</h3>
