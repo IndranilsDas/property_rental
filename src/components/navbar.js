@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Prompt } from 'next/font/google';
 import { CiBellOn } from "react-icons/ci";
 import { FaUserCircle } from "react-icons/fa";
+import { LuPhoneCall } from "react-icons/lu";
 
 const prompt = Prompt({
   subsets: ['latin'],
@@ -50,9 +51,11 @@ export default function Nav() {
             list your property
           </button>
 
-          <button className={`text-sm md:text-base uppercase font-semibold px-3 py-2 rounded 
+          <button className={`flex items-center gap-2 text-sm md:text-base uppercase font-semibold px-3 py-2 rounded 
             ${Scrolled ? 'ring ring-black text-black' : 'ring ring-white text-white'} 
             hover:bg-orange-300 hover:text-black transition duration-200`}>
+              <LuPhoneCall className='h-4 w-4'/>
+
             +91 9167928471
           </button>
 
